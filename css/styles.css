@@ -1,0 +1,368 @@
+/*BASE*/
+body {
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-size: 14px;
+    color: #dddddd;
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+header {
+    top: 0;   
+}
+
+#logo {
+    float: left;
+    margin: 33px 0px 33px 120px;
+} 
+
+#logo h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: #2fe7be;  
+    margin: 0px
+}
+
+
+#logo h1 span {
+    font-weight: 300;
+}
+
+nav {
+    float: right;  
+    margin: 50px 120px 0 0;
+    display: inline-block;
+}
+
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #a8a8a8;
+    text-decoration: none;
+    margin-left: 40px;
+    
+}
+
+nav a:hover {
+    color: #2fe7be;    
+}
+
+#signup {
+    border: 2px solid #2fe7be;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#slider-back {
+    clear: both;
+    width: 100%;
+    height: 375px;
+    background-color: #34495e;
+}
+
+#slide {
+    margin: auto;
+    width: 83%;
+    height: 375px;
+    background-color: #25394d;
+    text-align: center; 
+    clear: both;
+}
+
+#slide h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 36px;
+    padding-top: 50px;
+}
+
+.description { 
+    margin: 30px auto;
+    width: 75%;  
+    color: #8aa2bb;
+    font-size: 14px;
+}
+
+.slider {
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.slider a {
+    height: 7px;
+}
+
+.slider-unit {
+    width: 80px;
+    height: 7px;
+    background-color: #e0e0e0;
+    margin: 0px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    
+} 
+
+/*CHANGE AFTER LEARNING HOW TO jQUERY*/
+.slider-unit:hover {
+    background-color: #c8c8c8;
+}
+
+#active-slider{
+    background-color: #2fe7be;   
+}
+
+/*CONTENT*/
+#email-sub {
+    margin: auto;
+    margin-top: 70px;
+    text-align: center;
+    max-width: 810px;
+    height: 130px;
+    background-color: #ebebeb
+}
+
+#email-sub h3 {
+    color: #395067;
+    font-size: 18px;
+    padding-top: 18px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#email-sub h3 span {
+    color: #2980b9;
+}
+
+#email-form {
+    width: 290px;
+    height: 30px;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-top: 30px;
+    color: #4f4f4f;
+}
+
+#submit {
+    display: inline-block;
+    background-color: #3bc576;
+    height: 33px;
+    width: 130px;
+    margin-left: 5px;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    -webkit-box-shadow:0px 2px 0px 0px rgba(46,158,93,1);
+       -moz-box-shadow:0px 2px 0px 0px rgba(46,158,93,1);
+            box-shadow: 0px 2px 0px 0px rgba(46,158,93,1);
+    outline: none;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #36b46b;
+
+}
+
+#submit:active {
+    cursor: pointer;
+    background-color: #2e9e5d;
+    position: relative;
+    top: 1px;
+}
+
+#features {
+    width: 100%;
+    height: 300px;
+    background-color: #e8e8e8;
+    text-align: center;
+    margin-top: 65px;
+    display: inline-block;
+}
+
+.ft {
+   max-width: 300px;
+   margin: 50px 35px;
+   display: inline-block;
+}
+
+.ft h4 {
+   font-size: 18px;
+   font-weight: 400;
+   color: #304860;
+   margin: 0px;
+   padding: 0px;
+} 
+
+.ft p {
+   color: #858585;
+   font-size: 14px;
+   margin: 5px;
+}
+
+.more {
+   font-size: 14px;
+   color: #4c6a89;
+}
+
+#screen {
+    text-align: center;
+    max-width: 55%;
+    margin: auto;
+    clear: both;
+}
+
+#screen h1 {
+    font-size: 36px;
+    font-weight: 300;
+    color: #516d89;
+    padding-top: 25px;
+    margin-bottom: 0px;
+}
+
+#screen p {
+    color: #9a9a9a;
+    padding-bottom: 20px;
+}
+
+/*FOOTER*/
+#opensource {
+    height: 245px;
+    width: 100%;    
+    background-color: #e2e2e2;
+    margin-top: 70px;
+    text-align: center;
+}
+
+#opensource h2 {
+    font-size: 30px;
+    color: #767676;
+    padding-top: 50px;
+    font-weight: 400;
+}
+
+#opensource h2 span {
+    color: #02bd85;
+}
+
+input.github-button {
+    background-image: url(../assets/github_icon.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: 8px 17px;
+    background-color: #02bd85;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    vertical-align: middle;
+    height: 65px;
+    width: 290px;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: white;
+    padding-left: 50px;
+    -webkit-box-shadow: 0px 4px 0px 0px rgba(3,158,112,1);
+       -moz-box-shadow: 0px 4px 0px 0px rgba(3,158,112,1);
+            box-shadow: 0px 4px 0px 0px rgba(3,158,112,1);
+}
+
+input.github-button:hover {
+    background-color: #00b07b;
+}
+
+input.github-button:active {
+    position: relative;
+    top: 4px;    
+    -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+            box-shadow: none;
+}
+
+#opensource p {
+    color: #454545;
+    font-size: 14px;
+}
+
+#opensource p a {
+    color: #3d77af;
+    font-size: 14px;
+}
+
+#foot { 
+    width: 100%;
+    height: 300px;  
+    background-color: #2f4458;
+    margin-top: 0px;
+    position: absolute;
+}
+
+#foot p {
+    font-size: 12px;
+    margin-top: 20px;
+    color: #61778c;  
+    text-align: center;
+}
+
+#foot a {
+    font-size: 12px;   
+}
+
+.menu {
+    height: 190px;
+    width: 46.247%;
+    margin: 15px auto;
+}
+
+.title {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #02bd85;
+}
+
+#no-padding {
+    padding-left: 0px ;
+}
+
+ul {
+    float: left;
+    list-style-type: none;
+    padding-left: 100px;
+}
+
+ul li a {
+    font-size: 14px;
+    color: #dddddd;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #b2b2b2;
+}
+
+#thin-line {
+    background-color: #485b6d;  
+    width: 50%;
+    height: 1px;
+    margin: auto;
+}
+
+p a:hover {
+    padding-bottom: 2px;
+    text-decoration: underline;   
+}
