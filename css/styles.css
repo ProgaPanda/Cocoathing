@@ -58,6 +58,20 @@ nav a:hover {
     color: #2fe7be;    
 }
 
+@media (max-width: 1060px) {
+    nav {
+        display: none;
+    }
+    
+    #logo {
+        text-align: center;
+        position: relative;
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+
 #signup {
     border: 2px solid #2fe7be;
     border-radius: 5px;
@@ -67,17 +81,26 @@ nav a:hover {
 #slider-back {
     clear: both;
     width: 100%;
-    height: 375px;
     background-color: #34495e;
 }
 
 #slide {
     margin: auto;
     width: 83%;
-    height: 375px;
     background-color: #25394d;
     text-align: center; 
     clear: both;
+}
+
+@media (max-width: 800px) {
+    #slide {
+        background-color: #34495e;
+        width: 100%;
+    }
+}
+
+#slide img {
+    margin-bottom: 50px;
 }
 
 #slide h2 {
@@ -154,6 +177,12 @@ nav a:hover {
     color: #4f4f4f;
 }
 
+@media (max-width: 500px) {
+    #email-form {
+        width: 150px;    
+    }
+}
+
 #submit {
     display: inline-block;
     background-color: #3bc576;
@@ -186,7 +215,6 @@ nav a:hover {
 
 #features {
     width: 100%;
-    height: 300px;
     background-color: #e8e8e8;
     text-align: center;
     margin-top: 65px;
@@ -194,9 +222,15 @@ nav a:hover {
 }
 
 .ft {
-   max-width: 300px;
-   margin: 50px 35px;
-   display: inline-block;
+    max-width: 300px;
+    margin: 50px 35px;
+    display: inline-block; 
+}
+
+@media (max-width: 800px) {
+    .ft {
+        margin: 35px;   
+    }
 }
 
 .ft h4 {
@@ -238,21 +272,32 @@ nav a:hover {
     padding-bottom: 20px;
 }
 
+@media (max-width: 800px) {
+    #screen img {
+        display: none;   
+    }
+    
+    #screen p {
+        padding-bottom: 0;   
+    }
+    
+}
 /*FOOTER*/
 #opensource {
-    height: 245px;
     width: 100%;    
     background-color: #e2e2e2;
-    margin-top: 70px;
+    margin: 70px 0 0 0;
     text-align: center;
 }
 
 #opensource h2 {
+    padding: 40px 20px 0 0;
     font-size: 30px;
     color: #767676;
-    padding-top: 50px;
     font-weight: 400;
 }
+
+
 
 #opensource h2 span {
     color: #02bd85;
@@ -295,8 +340,11 @@ input.github-button:active {
 }
 
 #opensource p {
+    position: relative;
     color: #454545;
     font-size: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 #opensource p a {
@@ -306,15 +354,13 @@ input.github-button:active {
 
 #foot { 
     width: 100%;
-    height: 300px;  
     background-color: #2f4458;
-    margin-top: 0px;
     position: absolute;
 }
 
 #foot p {
     font-size: 12px;
-    margin-top: 20px;
+    margin: 20px;
     color: #61778c;  
     text-align: center;
 }
@@ -324,25 +370,27 @@ input.github-button:active {
 }
 
 .menu {
-    height: 190px;
-    width: 46.247%;
-    margin: 15px auto;
+    width: 60%;    
+    margin: 20px auto;
 }
 
+@media (max-width: 1200px) {
+    .menu {
+        display: none;
+    }
+}
 .title {
     margin-bottom: 25px;
     font-size: 16px;
     color: #02bd85;
 }
 
-#no-padding {
-    padding-left: 0px ;
-}
 
 ul {
     float: left;
     list-style-type: none;
     padding-left: 100px;
+    margin-bottom: 50px;
 }
 
 ul li a {
@@ -360,7 +408,10 @@ ul li a:hover {
     width: 50%;
     height: 1px;
     margin: auto;
+    clear: both;
 }
+
+
 
 p a:hover {
     padding-bottom: 2px;
